@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function calc(){ 
+        let a=Number(document.getElementById("n1").value);
+        let b=Number(document.getElementById("n2").value);
+        let str= `${a} + ${b} = ${a+b}<br>`  //bakticks `
+        str=str+ `${a} - ${b} = ${a-b}<br>`
+        str=str+ `${a} * ${b} = ${a*b}<br>`
+        str=str+ `${a} / ${b} = ${a/b}<br>`
+        d1.innerHTML=str;
+    
+        }
+    </script>
+</head>
+<body>
+
+    <p><input type="number" id="n1" placeholder="num1"></p>
+    <p><input type="number" id="n2" placeholder="num2"></p>
+    <button onclick="calc()">submit</button>
+    <div id="d1"></div>
+    <!-- <div id="d2"></div>
+    <div id="d3"></div>
+    <div id="d4"></div> -->
+
+</body>
+</html>

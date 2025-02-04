@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function f1(){
+            let username=document.getElementById("name").value;
+            let password=document.getElementById("pwd").value;
+            if (username=="" || password==""){
+                msg.innerHTML="email and password cannot be blank"
+            }
+            else if (username!=="john@gmail.com" || password !=="1234"){
+                msg.innerHTML="access denied"
+            }
+        
+            else{
+                msg.innerHTML="welcome john!"
+            }
+    }
+    </script>
+    <style>
+        .container{
+            
+            text-align: center;
+            display: flex;
+            justify-content: center;
+
+
+        }
+        .box{
+            border: 2px solid silver;
+            padding: 20px;
+            width: 400px;
+            border-radius: 20px;
+
+        }
+        input{
+            width: 90%;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        button{
+            font-size: xx-large;
+            border-radius: 10px;
+            width: 80%;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container" >
+        <div class="box">
+        <p><div id="msg"></div></p>
+        <p> <input type="text" required id="name" placeholder="EMAIL OR PHONE"></p>
+        <p><input type="password" required id="pwd" placeholder="password"></p>
+        <button onclick="f1()" style="background-color: blue;color: aliceblue;">LOGIN</button>
+    
+    </div>
+</div>
+</body>
+</html>
