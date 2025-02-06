@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function info(){
+            let username=document.getElementById("name").value 
+            let email=document.getElementById("email").value
+            let password=document.getElementById("password").value
+            let dob=document.getElementById("dob").value
+            data.innerHTML=`${username},${email},${password},${dob}`
+        }
+    </script>
+</head>
+<body>
+    <h1>Register form</h1>
+    <p><input type="text" id="name" placeholder="enter name"></p>
+    <p><input type="email" id="email" placeholder="enter email"></p>
+    <p><input type="password" id="password" placeholder="enter password"></p>
+    <p><input type="date" id="dob" placeholder="enter dob"></p>
+    <button onclick="info()">Register</button>
+    <div id="data"></div>
+</body>
+</html>

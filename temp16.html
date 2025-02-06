@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function f1(){
+            let username=document.getElementById("email").value 
+            let pass=document.getElementById("password").value 
+            data.innerHTML=`${username}, ${pass}`
+
+        }
+    </script>
+        <style>
+        .container{
+            
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            padding-top: 100px;
+
+        }
+        .box{
+            border: 2px solid silver;
+            padding: 20px;
+            width: 350px;
+            border-radius: 10px;
+            height: 380px;
+
+        }
+        input{
+            width: 90%;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        button{
+            font-size: large;
+            border-radius: 6px;
+            width: 50%;
+            background-color: blue ;
+            padding: 10px;
+            color: white;
+            margin: 20px;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+    <h1>Login Form</h1>
+    <p><input type="text" id="email" placeholder="Email Address"></p>
+    <p><input type="password" id="password" placeholder="Password"></p>
+    <button onclick="f1()">Login </button>
+    <div id="data"></div>
+</div>
+</div>
+</body>
+</html>
