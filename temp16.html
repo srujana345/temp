@@ -4,10 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .c{
+            background-color: lightgray;
+        }
+    </style>
     <script>
         function f1(){
-            let username=document.getElementById("email").value 
-            let pass=document.getElementById("password").value 
+            //let username=document.getElementById("email").value 
+            let username=document.querySelector("#email").value 
+            //let username=document.querySelector(".c").value
+            //let username=document.querySelector("input").value
+            // let username=document.getElementsByClassName("c")
+            // let username=document.getElementsByTagName("input")
+            // let username=document.getElementsByName("email")
+            console.log(username)
+            let pass=document.getElementById("#password").value 
             data.innerHTML=`${username}, ${pass}`
 
         }
@@ -50,8 +62,8 @@
     <div class="container">
         <div class="box">
     <h1>Login Form</h1>
-    <p><input type="text" id="email" placeholder="Email Address"></p>
-    <p><input type="password" id="password" placeholder="Password"></p>
+    <p><input type="text" class="c" id="email" placeholder="Email Address"></p>
+    <p><input type="password" class="c"  id="password" placeholder="Password"></p>
     <p><a href="#">forgot password?</a></p>
     <button onclick="f1()">Login </button>
     <hr>
